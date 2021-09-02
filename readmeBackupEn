@@ -1,0 +1,33 @@
+# P2-project
+
+## Summary of applikation
+This is a web applikation, that recommends movies to a group based on movies the group individuals choose. The movies choosen should be movies they like and would want to see something simmilar to. Based on the choosen movies, the applikation will recommend the group a list of up to 10 movies, The movies is recommended such that they will focus on being the most likely movie to be broadly liked in the group. This should be used by a group to settle on a commonly accepted movie to watch together. Further information on the details of usage can be read on the applikaitons help page.
+
+## Getting started
+To get the applikation and run it.
+
+
+### Requirements
+1. Node.js
+2. MySQL
+3. XAMPP or samilar to host database.
+
+### Run the Applikation
+1. Clone the repository
+```sh
+git clone https://github.com/lass5588/P2-project.git
+```
+2. Upload the database file (p2_db.sql) to MySQL
+
+3. Run the applikation from the terminal.
+```sh
+node app.js
+```
+
+## Contributers
+This project has been developed by the group sw2b2-5 2. semester Software at Aalborg University.
+
+## Notes
+- The applikation is running locally, as it is, it will work with multiple people, if it is on the same machine, else it will need to be hosted online.
+- The applikation has been developed for the browsers Chrome and Firefox, and has therefore not been tested in other environments.
+- The applikation has been developed for the operating systems Windows and MacOS and has not been tested on other OS.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="shortcut icon" href="#" />
+    <title>Document</title>
+  </head>
+  <body onload="sessionStorage.clear();">
+    <center>
+      <div class="resize">
+        <input
+          class="usernameRoomIdtextBox"
+          type=" text"
+          id="username"
+          placeholder="Navn"
+          name="username"
+          onkeypress="return /[a-z0-9_A-ZæøåÆØÅ ]/.test(event.key)"
+          minlength="1"
+          maxlength="12"
+          required
+        />
+        <!-- onkeypress is used to validate user input, only the parsed characters are allowed -->
+        <input
+          type="submit"
+          formaction="/waitingRoomSessionJoin"
+          class="defaultButton"
+          id="noConstraintsButton"
+          value="Opret uden fravalg"
+          disabled
+        />
+        <br />
+        <input
+          type="submit"
+          formaction="/constraints"
+          class="defaultButton"
+          id="constraintsButton"
+          value="Opret med fravalg"
+          disabled
+        />
+        <input type="hidden" name="sessionId" />
+        <input type="hidden" name="userType" value="1" />
+        <br />
+        <button type="submit" class="defaultButton" id="backButton">
+          Tilbage ↲
+        </button>
+      </div>
+    </center>
+  </body>
+  <script src="../Javascript/sessionStarter.js"></script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="shortcut icon" href="#">
+<title></title>
+</head> 
+<body>
+    <h1>Vælg op til fem film du kan lide</h1>
+    
+    <center>
+    <div id = "movieSelectDiv">
+        <div class = selectedMoviesDiv>
+            <label name="movies" class="microHeader">Valgte film</label>
+            <form  autocomplete="off" method="#" action="#" onsubmit="return false;" id="chosenMoviesForm">
+                <div class="autocomplete"><input type='text' class="inputtedMoviesTextField" id='movieInput1' value=></div><div id="light1" class="off"></div>
+                <br><br>
+                <div class="autocomplete"><input type='text' class="inputtedMoviesTextField" id='movieInput2' value=></div><div id="light2" class="off"></div>
+                <br><br>
+                <div class="autocomplete"><input type='text' class="inputtedMoviesTextField" id='movieInput3' value=></div><div id="light3" class="off"></div>
+                <br> <br>
+                <div class="autocomplete"><input type='text' class="inputtedMoviesTextField" id='movieInput4' value=></div><div id="light4" class="off"></div>
+                <br><br>
+                <div class="autocomplete"><input type='text' class="inputtedMoviesTextField" id='movieInput5' value=></div><div id="light5" class="off"></div>
+                <br>
+                <br>  
+            <br>
+        </div>
+        <div class = nextToEachOtherDiv>
+            <div class = nextToEachOtherDiv>
+                <div class = nextToEachOtherDiv>
+                    <input type="checkbox" id="includeSelectedMoviesCheckbox"> 
+                </div>
+                <div class = nextToEachOtherDiv>
+                    <label class = "checkboxText"> Inkluder valgte film i sortering </label> 
+                </div>
+            </div>
+            <br> <input type='button' class = "defaultButton" value='Fortsæt 🡢' id="continueButton" disabled> 
+        </div>
+    </div>
+    </center>
+</body>
+<script src="../Javascript/movieSelect.js"></script>
+<script src="../Javascript/thirdPartyScripts/dropdownMenu.js"></script>

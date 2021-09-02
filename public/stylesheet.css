@@ -1,0 +1,421 @@
+h1 {
+  font-size: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+ body {
+  background: linear-gradient(to right, #25c481, #25b7c4);
+} 
+section {
+  margin: 50px;
+}
+
+html * {
+  font-family: "Trebuchet MS";
+}
+
+.defaultButton {
+  background-color: #333333;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 23px 55px;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+.defaultButton:hover:enabled {
+  background-color: #444444;
+  cursor: pointer;
+}
+.defaultButton:active:not(#toMainButton) {
+  position: relative;
+  top: 1px;
+}
+.defaultButton:disabled {
+  background-color: #555555;
+  color: #9e9e9e;
+  cursor: default;
+}
+#toMainButton {
+  width: 360px;
+  height: 150px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  scroll-behavior: smooth;
+}
+#toMainButton:active {
+  bottom: 49px;
+}
+
+#includeSelectedMoviesCheckbox {
+  zoom: 3;
+}
+#movieSelectDiv {
+  width: 80%;
+  margin-top: 200px;
+}
+#chosenMoviesForm {
+  margin-top: 30px;
+}
+
+.checkboxText {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  font-size: 30px;
+  max-width: 500px;
+  word-wrap: break-word;
+}
+
+/* CSS til Waiting room */
+.usernames {
+  font-size: 70px;
+  color: white;
+  line-height: 2;
+  text-align: center;
+  margin-top: 50px;
+  columns: 2;
+  margin-bottom: 50px;
+}
+
+#remainingUsersText,
+#shareIdText {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.h1WaitingRoom {
+  text-align: center;
+  font-size: 75pt;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#continueButton {
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  width: 500px;
+  height: 150px;
+  float: left;
+}
+
+#sessionId {
+  margin-bottom: 0px;
+}
+#joinButton {
+  margin-top: 80px;
+}
+.resize {
+  width: 600px;
+  height: 150px;
+  margin-top: 50px;
+}
+.resizeNames {
+  width: 1400px;
+  height: 150px;
+  margin-top: 50px;
+}
+.usernameRoomIdtextBox {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  border-width: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.constraintsTextBox {
+  display: inline-block;
+  width: 500px;
+  height: 70px;
+  margin-top: 10px;
+  border-width: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.allConstraintDiv {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+
+.nextToEachOtherDiv {
+  display: inline-block;
+  vertical-align: middle;
+}
+.selectedMoviesDiv {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 100px;
+}
+
+.constraintDiv {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-right: 40px;
+  vertical-align: top;
+}
+
+.constraintHeader {
+  text-align: left;
+  font-size: 40px;
+  color: white;
+}
+
+.inputtedMoviesTextField {
+  font-size: 35px;
+  width: 500px;
+  height: 58px;
+}
+#addConstraintsButton,
+#applyConstraintsButton,
+#removeConstraintsButton,
+#backToSessionStarterButton {
+  width: 366px;
+  height: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.microHeader {
+  color: white;
+  font-size: 50px;
+}
+
+.constraintsText {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  font-size: 50px;
+  max-width: 460px;
+  word-wrap: break-word;
+}
+
+.slider {
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 500px;
+  height: 70px;
+  margin-top: 10px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  border-width: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 50px;
+  background: white;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70px;
+  height: 70px;
+  background: #777777;
+}
+
+.off {
+  display: inline-flex;
+  width: 10px;
+  height: 63px;
+  background-color: #a4a7a5;
+  margin-bottom: -19px;
+}
+.greenLight {
+  display: inline-flex;
+  width: 10px;
+  height: 63px;
+  background-color: #00ff55;
+  margin-bottom: -19px;
+}
+.redLight {
+  display: inline-flex;
+  width: 10px;
+  height: 63px;
+  background-color: #ff3300;
+  margin-bottom: -19px;
+}
+
+.table {
+  padding-bottom: 20px;
+  vertical-align: top;
+}
+
+.emptySpace {
+  height: 25px;
+}
+
+.horizontalLine {
+  height: 25px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.score {
+  font-size: 50px;
+  color: white;
+  text-align: left;
+  position: relative;
+  left: 10px;
+}
+
+.imdb {
+  width: 120px;
+  position: relative;
+}
+
+.h1MovieRecommendations {
+  text-align: center;
+  font-size: 75pt;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.movieTitle {
+  vertical-align: top;
+  font-size: 50px;
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+  position: relative;
+  margin-top: 150px;
+}
+
+.movieDescription {
+  font-size: 32px;
+  color: white;
+  line-height: 1.5;
+  text-align: left;
+  width: 1200px;
+}
+
+.poster {
+  margin-right: 25px;
+  width: 250px;
+}
+.center {
+  margin: 0, auto;
+}
+.helpText {
+  width: 80%;
+  font-size: 1.8vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.h1Help {
+  text-align: center;
+  font-size: 65pt;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.whiteLine {
+  background: white;
+  border: none;
+  height: 6px;
+}
+.miniPicture {
+  width: 100%;
+}
+.lastPicture {
+  width: 80%;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 6 / 2 / 6 / 6;
+}
+.div2 {
+  grid-area: 3 / 2 / 6 / 6;
+}
+.div3 {
+  grid-area: 2 / 2 / 3 / 6;
+  align-self: flex-end;
+}
+.div4 {
+  grid-area: 3 / 2 / 5 / 4;
+  align-self: center;
+}
+.div5 {
+  grid-area: 3 / 4 / 5 / 6;
+  align-self: center;
+}
+.div6 {
+  grid-area: 2 / 2 / 3 / 5;
+  justify-self: start;
+  margin-bottom: 15px;
+  font-size: xx-large;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+
+/*------------- The following CSS is for the dropdown-suggestions ---------------*/
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+

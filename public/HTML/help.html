@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="shortcut icon" href="#">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+		<div>
+            <div>
+				<h1  class="h1Help">Velkommen til Filmvalg for grupper</h1>
+            </div>
+            <div>
+                <form method="GET" action="/">
+            </div>
+                <input class="defaultButton" type="submit" value="Tilbage ↲" id = "toMainButton">
+            </form>
+			<div ><hr class="whiteLine"> </div>
+			<div > <p class="helpText"> Denne prototype på vores program er beregnet til at kunne lette den lange filmvalgs process for grupper. 
+				Mens streamingtjenester fokuserer på at anbefale film til enkelte brugere, forsøger dette program at lave anbefalinger til grupper af brugere, 
+				så I sammen kan finde en film alle vil blive glade for.</p>
+            </div>
+			<div><p  class="helpText">Når du om lidt skal til at prøve applikationen, vil du blive mødt af en række menuer.</p></div>
+		</div> 
+
+	<section name="steps" class="center" style="color: white;">
+		<div class="parent">
+			<div class="div6">Hovedmenu</div>
+			<div class="div3"><hr class="whiteLine"> </div>
+			<div class="div4"><img class="miniPicture" src="/Pictures/menu.png" > </div>
+			<div class="div5"><p class="helpText">Det første valg du skal træffe er hvorvidt du vil lave eller tilslutte dig et rum.</p> </div>
+			</div> 
+		<div class="parent">
+			<div class="div6" >Tilslut</div>
+			<div class="div3"><hr class="whiteLine"> </div>
+			<div class="div4"><p class="helpText">Hvis du klikkede "Tilslut dig et rum", skal du nu udfylde dit navn og 
+			id'et for det rum du ønsker at tilslutte dig.
+		  </p></div>
+			<div class="div5"><img class="miniPicture" src="/Pictures/tilslut.png"></div>
+			</div> 
+		<div class="parent">
+			<div class="div6">Opret</div>
+				<div class="div3"><hr class="whiteLine"> </div>
+				<div class="div4"><img class="miniPicture" src="/Pictures/opret.png"></div>
+				<div class="div5"> <p class="helpText">
+					Hvis du derimod klikkede "Lav et rum", skal du udfylde dit navn og beslutte med din gruppe, om der skal være fravalg.
+					Fravalg dækker over restriktioner, såsom genre og årstal, som begrænser hvilke film, der kan blive anbefalet. 
+				</p></div>
+				</div> 
+		<div class="parent">
+			<div class="div6">Fravalg</div>
+					<div class="div3"><hr class="whiteLine"> </div>
+					<div class="div4"> <p class="helpText">Du har mulighed for at fravælge skuespillere, instruktører og genrer. Samtidig kan du vælge hvilken årrække du ønsker film fra, samt minimums imdb score fra 1-10.</p></div>
+					<div class="div5"><img class="miniPicture" src="/Pictures/fravalg.png"> </div>
+					</div> 
+		<div class="parent">
+			<div class="div6">Venterum 1</div>
+						<div class="div3"><hr class="whiteLine"> </div>
+						<div class="div4"><img class="miniPicture" src="/Pictures/venterum1.png"> </div>
+						<div class="div5"> <p class="helpText">
+							Efter du har oprettet et rum - enten med eller uden fravalg - kommer du i et venterum. Hvis du har tilsluttet dig rummet vil du også komme herind.
+							Når alle er tilsluttet, kan værten klikke på "Start", hvorefter filmvalgsprocessen vil starte for brugerne.
+						</p> </div>
+						</div> 
+		<div class="parent">
+			<div class="div6">Filmvalg</div>
+							<div class="div3"><hr class="whiteLine"> </div>
+							<div class="div4"> <p class="helpText">
+								Nu skal du vælge op til fem film, som du kan lide. Du kan også krydse af, om du ønsker, at de film, som du vælger, kan blive anbefalet
+							</p></div>
+							<div class="div5">	<img class="miniPicture" src="/Pictures/filmvalg1.png"> </div>
+							</div> 
+			<div class="parent">
+				<div class="div6">Filmvalg - fortsat</div>
+								<div class="div3"><hr class="whiteLine"> </div>
+								<div class="div4"><img class="miniPicture" src="/Pictures/filmvalg2.png"> </div>
+								<div class="div5"> <p class="helpText">
+									Eksisterer filmen i databasen, er der grønt lys ud for filmen. Omvendt, hvis filmen ikke findes i databasen, vil lyset blive rødt.
+									"Fortsæt" knappen kan først anvendes, når alle felter er enten grønne, eller tomme.
+								</p></div>
+								</div> 
+			<div class="parent">
+				<div class="div6">Venterum 2</div>
+									<div class="div3"><hr class="whiteLine"> </div>
+									<div class="div4"> <p class="helpText">
+										Efter du har valgt dine 1-5 film, vil du ankomme til et venterum. Her kan du se hvor mange af de andre i gruppen som allerede har valgt deres film.
+										Når alle har valgt deres film, har værten muligheden for at trykke på "Se forslag".
+									</p></div>
+									<div class="div5"><img class="miniPicture" src="/Pictures/venterum2.png"></div>
+									</div> 
+
+			<div class="parent">
+				<div class="div6" >Forslag </div>
+										<div class="div3"><hr class="whiteLine"> </div>
+										<div class="div2"> <p class="helpText">
+											Du vil nu se en side med 10 filmanbefalinger, lavet på baggrund af gruppens filmvalg og eventuelle fravalg.
+										</p></div>
+										<div class="div1">	<img src="/Pictures/forslag.png" class="lastPicture"></div>
+								
+										</div>
+</center>
+</body>
+</html>

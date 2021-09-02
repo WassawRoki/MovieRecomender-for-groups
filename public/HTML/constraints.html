@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="shortcut icon" href="#" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Fravalg</h1>
+    <center>
+      <div class="allConstraintDiv">
+        <div>
+          <div class="constraintDiv">
+            <input
+              type="button"
+              class="defaultButton"
+              value="Tilføj +"
+              id="addConstraintsButton"
+              disabled
+            />
+          </div>
+          <div class="constraintDiv">
+            <input
+              type="button"
+              class="defaultButton"
+              value="Anvend 🡢"
+              id="applyConstraintsButton"
+              disabled
+            />
+          </div>
+          <div class="constraintDiv">
+            <input
+              type="button"
+              class="defaultButton"
+              value="Nulstil ⭮"
+              id="removeConstraintsButton"
+              disabled
+            />
+          </div>
+          <div class="constraintDiv">
+            <input
+              type="button"
+              class="defaultButton"
+              value="Tilbage ↲"
+              id="backToSessionStarterButton"
+            />
+          </div>
+        </div>
+        <div>
+          <div class="constraintDiv">
+            <label class="constraintHeader"> Tidligste år: </label> <br />
+            <input
+              type="range"
+              value="2000"
+              class="slider"
+              name="startYear"
+              min="2000"
+              max="2017"
+              step="1"
+              placeholder="2000"
+              id="inputtedEarliestYear"
+            />
+            <div class="constraintsText" id="earliestYearConstraint">2000</div>
+          </div>
+          <div class="constraintDiv">
+            <label class="constraintHeader"> Seneste år: </label> <br />
+            <input
+              type="range"
+              value="2017"
+              class="slider"
+              name="endYear"
+              min="2000"
+              max="2017"
+              step="1"
+              placeholder="2017"
+              id="inputtedLatestYear"
+            />
+            <div class="constraintsText" id="latestYearConstraint">2017</div>
+          </div>
+          <div class="constraintDiv">
+            <label class="constraintHeader"> Mindste IMDb-score: </label> <br />
+            <input
+              type="range"
+              value="1"
+              class="slider"
+              name="rating"
+              min="1"
+              max="8"
+              step="1"
+              placeholder="1"
+              id="inputtedLowestRating"
+            />
+            <div class="constraintsText" id="lowestRatingConstraint">1</div>
+          </div>
+        </div>
+        <div>
+          <div class="constraintDiv">
+            <label class="constraintHeader"> Skuespillere: </label> <br />
+            <input
+              name="actors"
+              class="constraintsTextBox"
+              id="inputtedActors"
+              type="text"
+              placeholder="Skuespiller"
+              maxlength="20"
+            />
+            <div class="constraintsText" id="actorConstraints"></div>
+          </div>
+          <div class="constraintDiv">
+            <label class="constraintHeader"> Instruktører: </label> <br />
+            <input
+              name="directors"
+              class="constraintsTextBox"
+              id="inputtedDirectors"
+              type="text"
+              placeholder="Instruktør"
+              maxlength="20"
+            />
+            <div class="constraintsText" id="directorConstraints"></div>
+          </div>
+          <div class="constraintDiv">
+            <label class="constraintHeader"> Genrer: </label> <br />
+            <div class="autocomplete">
+              <input
+                class="constraintsTextBox"
+                name="Genre"
+                id="inputtedGenres"
+                type="text"
+                placeholder="Genre"
+                maxlength="20"
+              />
+            </div>
+            <div class="constraintsText" id="genreConstraints"></div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
+<script src="../Javascript/constraints.js"></script>
+<script src="../Javascript/thirdPartyScripts/dropdownMenu.js"></script>

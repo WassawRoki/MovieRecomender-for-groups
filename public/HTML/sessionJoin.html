@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="shortcut icon" href="#" />
+    <title></title>
+  </head>
+  <body>
+    <center>
+      <div class="resize">
+        <input
+          id="username"
+          class="usernameRoomIdtextBox"
+          type="text"
+          placeholder="Navn"
+          onkeypress="return /[a-z0-9_A-ZæøåÆØÅ ]/.test(event.key)"
+          maxlength="12"
+          required
+          name="username"
+        /><br />
+        <!-- onkeypress is used to validate user input, only the parsed characters are allowed -->
+        <input
+          id="sessionId"
+          class="usernameRoomIdtextBox"
+          type="text"
+          name="sessionId"
+          placeholder="Rum-ID"
+          onkeypress="return /[a-z0-9_A-ZæøåÆØÅ ]/.test(event.key)"
+          minlength="8"
+          maxlength="8"
+          required
+          maxlength="12"
+          required
+        /><br />
+        <div class="microHeader" id="sessionDoesNotExist"><br /></div>
+        <input type="hidden" name="userType" value="0" />
+        <input
+          class="defaultButton"
+          type="submit"
+          id="joinButton"
+          value="Tilslut"
+          disabled
+        /><br />
+        <button class="defaultButton" type="button" id="backButton">
+          Tilbage ↲
+        </button>
+      </div>
+    </center>
+  </body>
+  <script src="../Javascript/sessionJoin.js"></script>
+</html>
